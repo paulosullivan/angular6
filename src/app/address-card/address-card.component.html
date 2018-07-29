@@ -1,13 +1,25 @@
-<p>
-  Name: {{user.name}}
-</p>
-<p>
-  Title: {{user.title}}
-</p>
-<p>
-  Addr: {{user.address}}
-</p>
-Phone Numbers:
-<p *ngFor="let number of user.phoneNumbers">{{number}}</p>
-	
-
+<div class="address-card">
+	<p id="header">
+		Contact Card:
+	</p>
+	<p>
+	  Name: {{user.name}}
+	</p>
+	<p>
+	  Title: {{user.title}}
+	</p>
+	<button (click)="toggleCollapse()">{{isCollapsedText}}</button>
+	<div *ngIf="!isCollapsed">
+		<p>
+		  Addr: {{user.address}}
+		</p>
+		<p *ngIf="user.phoneNumbers.length > 0">Phone Numbers:</p>
+		<p *ngFor="let number of user.phoneNumbers">{{number}}</p>
+	</div>
+	<div>
+		<p>
+			Input: <input type="text" [(ngModel)]="formInput">
+			Output: {{formInput}}
+		</p>
+	</div>
+</div>

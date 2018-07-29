@@ -1,0 +1,14 @@
+/* These rules will only be applied to this component */
+/* Angular applies a posfix to the HTML elements and the CSS rule names */
+/* EG .address-card[_ngcontent-c3] => Assuming c3 for the third component created in this app */
+
+.address-card {
+	border: 1px gray solid;
+	padding: 20px;
+}
+
+#header {
+	font-weight: bold;
+	font-style: italic;
+}
+
