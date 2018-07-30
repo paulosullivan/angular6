@@ -1,0 +1,18 @@
+<p>
+  <!-- Two Way Binding -->
+  GitHub Username: <input type="text" [(ngModel)]="username">
+  <button (click)="handleSubmitClick()">Submit</button>
+</p>
+<p class="heavy">First Method - Skip the setting of the properties when result is null</p>
+<p>Login Name: {{result?.login}}</p>
+<p>Number of Repos: {{result?.public_repos}}</p>
+<p>Number of Gists: {{result?.public_gists}}</p>
+<p>Number of Followers {{result?.followers}}</p>
+<p class="heavy">Second Method - Skip the entire div when result is null</p>
+<div *ngIf="result">
+  <p>Login Name: {{result.login}}</p>
+  <p>Number of Repos: {{result.public_repos}}</p>
+  <p>Number of Gists: {{result.public_gists}}</p>
+  <p>Number of Followers {{result.followers}}</p>
+</div>
+
