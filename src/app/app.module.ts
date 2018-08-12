@@ -8,6 +8,7 @@ import { DateComponent } from './date/date.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { RestDemoComponent } from './rest-demo/rest-demo.component';
+import { TestGroundComponent } from './test-ground/test-ground.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RestDemoComponent } from './rest-demo/rest-demo.component';
     HelloWorldComponent,
     DateComponent,
     AddressCardComponent,
-    RestDemoComponent
+    RestDemoComponent,
+    TestGroundComponent
   ],
   imports: [
     BrowserModule,
