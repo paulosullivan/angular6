@@ -13,6 +13,8 @@ export class TestGroundComponent implements OnInit {
 
   isBold = true;
 
+  parentNumber: number = 1;
+
   combinedClasses = {
     "red" : this.isRed,
     "bold" : this.isBold
@@ -21,6 +23,10 @@ export class TestGroundComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  updateParent(event) {
+    this.parentNumber = event;
   }
 
 }

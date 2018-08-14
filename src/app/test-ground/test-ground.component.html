@@ -13,3 +13,17 @@
 <p [ngClass]="combinedClasses">
   test-ground component
 </p>
+<p>
+  Parent value = {{parentNumber}}
+</p>
+<p>
+  --------------------
+  Test Component Child
+  --------------------
+  <app-test-ground-child
+    [initialValue]="parentNumber"
+    (update)="updateParent($event)"
+  >
+
+  </app-test-ground-child>
+</p>

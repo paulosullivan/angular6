@@ -9,6 +9,7 @@ import { AddressCardComponent } from './address-card/address-card.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { RestDemoComponent } from './rest-demo/rest-demo.component';
 import { TestGroundComponent } from './test-ground/test-ground.component';
+import { TestGroundChildComponent } from './test-ground/test-ground-child/test-ground-child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TestGroundComponent } from './test-ground/test-ground.component';
     DateComponent,
     AddressCardComponent,
     RestDemoComponent,
-    TestGroundComponent
+    TestGroundComponent,
+    TestGroundChildComponent
   ],
   imports: [
     BrowserModule,
